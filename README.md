@@ -11,14 +11,16 @@ Gopalkhoj(jumpnary search) is a search algorithm designed to efficiently locate 
 it has 2 phase
 1. jump phase
 2. Binary search phase
+
+
 *jump phase:
-	1.The algorithm initially performs a jump search, which involves moving through the array in fixed-sized blocks. The block size is determined as √n
-	where 
-	n is the length of the array.
-	2. This phase quickly narrows down the potential location of the target element by skipping over large portions of the array.
+1.The algorithm initially performs a jump search, which involves moving through the array in fixed-sized blocks. The block size is determined as √n
+where 
+n is the length of the array.
+2. This phase quickly narrows down the potential location of the target element by skipping over large portions of the array.
 * Binary Search Phase:
-	1. Once the block containing the target element is identified, a binary search is performed within that block.
-	2. This phase further refines the search by repeatedly dividing the search space in half, allowing for efficient locating of the target element.
+1. Once the block containing the target element is identified, a binary search is performed within that block.
+2. This phase further refines the search by repeatedly dividing the search space in half, allowing for efficient locating of the target element.
 * Advantages:
 	Improved Efficiency:
 		By combining the jump phase with binary search, Gopalkhoj can be more efficient than pure jump search, particularly in scenarios where the target is near the end of the array.
